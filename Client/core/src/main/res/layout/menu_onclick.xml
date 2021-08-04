@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Translucent">
+
+    <TextView
+        android:id="@+id/inProcess"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/title25"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/search"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/download"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete" />
+
+    <ImageView
+        android:id="@+id/deleteView"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/delete" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/style5"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:rotationY="18"
+        android:text="@string/title26"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteView" />
+
+    <Button
+        android:id="@+id/rename"
+        android:layout_width="100dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/style5"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:rotationY="18"
+        android:text="@string/title27"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteView" />
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="160dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="68dp"
+        android:background="@drawable/style5"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:rotationY="18"
+        android:text="@string/title33"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downloadView" />
+
+    <Button
+        android:id="@+id/getSomeInfo"
+        android:layout_width="70dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/style5"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:rotationY="18"
+        android:text="@string/title29"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteView" />
+
+    <ImageView
+        android:id="@+id/renameView"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/deleteView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rename" />
+
+    <ImageView
+        android:id="@+id/infoView"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/renameView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/downloadView"
+        android:layout_width="36dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rename"
+        app:srcCompat="@drawable/download2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

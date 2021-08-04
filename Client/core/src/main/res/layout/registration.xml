@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C90343A1">
+
+    <TextView
+        android:id="@+id/panel1"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#3E95CF98"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/title1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="263dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/input_style"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._ "
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/title2"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:textColorHighlight="#C0E4FF"
+        android:textColorLink="#C0E4FF"
+        android:textCursorDrawable="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panel1" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="263dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/input_style"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/title3"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:textColorHighlight="#C0E4FF"
+        android:textColorLink="#C0E4FF"
+        android:textCursorDrawable="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <ImageView
+        android:id="@+id/r_panel"
+        android:layout_width="23dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="7dp"
+        android:background="#3E95C8CF"
+        app:layout_constraintStart_toEndOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/panel1"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    <ImageView
+        android:id="@+id/l_panel"
+        android:layout_width="23dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="7dp"
+        android:background="#3E95C8CF"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/panel1"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    <Button
+        android:id="@+id/doing"
+        android:layout_width="189dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/style2"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title4"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/l_panel"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <ImageView
+        android:id="@+id/hide"
+        android:layout_width="44dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/doing"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:srcCompat="@drawable/hide" />
+
+    <ImageView
+        android:id="@+id/show"
+        android:layout_width="44dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/doing"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:srcCompat="@drawable/show" />
+
+    <ImageView
+        android:id="@+id/vis"
+        android:layout_width="4dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:background="#FF0000"
+        app:layout_constraintStart_toEndOf="@+id/hide"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+</androidx.constraintlayout.widget.ConstraintLayout>

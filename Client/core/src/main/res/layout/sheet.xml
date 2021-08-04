@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sheet"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="55dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <ImageView
+        android:id="@+id/up_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/panel" />
+
+    <TextView
+        android:id="@+id/login_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="62dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/style4"
+        android:enabled="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title14"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/up_panel" />
+
+    <Button
+        android:id="@+id/changeLogin"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="89dp"
+        android:background="@drawable/style4"
+        android:enabled="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title17"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/up_panel" />
+
+    <Button
+        android:id="@+id/changePassword"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="220dp"
+        android:background="@drawable/style4"
+        android:enabled="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title18"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/up_panel" />
+
+    <Button
+        android:id="@+id/deleteAccount"
+        android:layout_width="64dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/style3"
+        android:enabled="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title19"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/up_panel"
+        app:layout_constraintTop_toTopOf="@+id/up_panel" />
+
+    <Button
+        android:id="@+id/createNew"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/style5"
+        android:enabled="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title22"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteAccount"
+        app:layout_constraintTop_toTopOf="@+id/up_panel" />
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title30"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exit" />
+
+    <TextView
+        android:id="@+id/innerFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exit" />
+
+    <Button
+        android:id="@+id/showDownloaded"
+        android:layout_width="154dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/style9"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/title43"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeLogin" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#1E202B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    <TextView
+        android:id="@+id/accessGrantedPic"
+        android:layout_width="168dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style12"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/title58"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destination" />
+
+    <ImageView
+        android:id="@+id/accessPic"
+        android:layout_width="40dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accessGrantedPic"
+        app:srcCompat="@drawable/access2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

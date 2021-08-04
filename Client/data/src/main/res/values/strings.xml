@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">data</string>
+    <string name="title1">Тип:</string>
+    <string name="title2">Размер:</string>
+    <string name="title3">Создание:</string>
+    <string name="title4">Последнее изменение:</string>
+</resources>

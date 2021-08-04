@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.loader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/title"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustPan"
+        android:supportsRtl="true"
+        android:theme="@style/LoaderTheme">
+        <activity android:name=".primary.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".realization.Splash"
+            android:theme="@style/LoaderTheme">
+        </activity>
+
+        <activity
+            android:name=".client_options.grant_mode.obtaining.SpaceOfGrantedFiles"
+            android:theme="@style/LoaderTheme">
+        </activity>
+
+        <activity
+            android:name=".client_options.grant_mode.providing.GrantMode"
+            android:theme="@style/LoaderTheme">
+        </activity>
+
+        <activity
+            android:name=".data.FileExplorer"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/LoaderTheme">
+        </activity>
+
+        <activity
+            android:name=".client_options.ordinary.Registration"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".client_options.ordinary.Entry"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".client_options.ordinary.LoginReplacement"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".client_options.ordinary.PasswordReplacement"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".realization.Menu"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".client_options.ordinary.Renaming"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".client_options.ordinary.CreateFolder"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".data.MainInfo"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".client_options.ordinary.ToFolder"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            android:excludeFromRecents="true">
+        </activity>
+
+    </application>
+
+</manifest>

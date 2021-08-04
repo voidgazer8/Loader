@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/letter"
+        android:layout_width="244dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style4"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/title45"
+        android:textColor="#1E202B"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="359dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#003FDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letter"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+
+    <Button
+        android:id="@+id/internal"
+        android:layout_width="161dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/style7"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/title46"
+        android:textColor="#1E202B"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/external"
+        android:layout_width="113dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/style8"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/title47"
+        android:textColor="#1E202B"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/internal"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="359dp"
+        android:layout_height="610dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="60dp"
+        android:background="#E1F1F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/block1"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    <ListView
+        android:id="@+id/content"
+        android:layout_width="355dp"
+        android:layout_height="610dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/block1">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/block1"
+        android:layout_width="161dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:background="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/internal"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    <ImageView
+        android:id="@+id/block2"
+        android:layout_width="113dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="3dp"
+        android:background="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/block1"
+        app:layout_constraintTop_toBottomOf="@+id/internal"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    <TextView
+        android:id="@+id/totalPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/inputPath"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:focusable="true"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="left|center_vertical"
+        android:hint="@string/title48"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="26dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/search"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/letter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
