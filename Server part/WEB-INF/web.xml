@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD
+  Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+ 
+<web-app>
+ 
+  <servlet>
+    <servlet-name>RServlet</servlet-name>
+    <servlet-class>root.distribution.RServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RServlet</servlet-name>
+    <url-pattern>/RServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Uploading</servlet-name>
+    <servlet-class>root.withClient.Uploading</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Uploading</servlet-name>
+    <url-pattern>/Uploading</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Downloading</servlet-name>
+    <servlet-class>root.withClient.Downloading</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Downloading</servlet-name>
+    <url-pattern>/Downloading</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ReceiveSerialized</servlet-name>
+    <servlet-class>root.withClient.ReceiveSerialized</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ReceiveSerialized</servlet-name>
+    <url-pattern>/ReceiveSerialized</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
