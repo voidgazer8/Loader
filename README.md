@@ -3,3 +3,4 @@ the project with client and server parts, developed under Android. In working si
 There's no final version, so may contains workarounds and bad-done functionality
 
 all java code(for apk): Loader/Client/core/src/main/java/com/example/loader/
+server part is working on Tomcat 10.0 and MySQL
